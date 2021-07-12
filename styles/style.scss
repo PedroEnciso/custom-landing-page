@@ -3,3 +3,74 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+h1 {
+  font-size: 3rem;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 0rem;
+
+  nav {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+      list-style: none;
+      display: flex;
+
+      li {
+        margin-right: 1rem;
+        padding: 0.5rem 0.75rem;
+        transition: background-color 0.4s;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 0.95rem;
+        &:hover {
+          background-color: rgb(202, 202, 202);
+        }
+      }
+    }
+
+    button {
+      padding: 0.25rem 0.75rem;
+    }
+  }
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+
+  .hero-container {
+    width: 85%;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: rgb(165, 165, 165);
+      z-index: -1;
+      clip-path: polygon(0 0%, 100% 0, 100% 10%, 0 100%);
+    }
+
+    .hero-content {
+      height: fit-content;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
