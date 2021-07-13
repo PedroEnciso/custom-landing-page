@@ -15,7 +15,7 @@ body {
   background-color: white;
   color: $text-color;
   font-family: "tahoma";
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 h1 {
@@ -43,6 +43,7 @@ button {
   color: $button-text-color;
   text-transform: uppercase;
   font-weight: bold;
+  font-size: 1rem;
   letter-spacing: 0.1rem;
   font-family: "courier new";
 }
@@ -86,7 +87,7 @@ header {
         transition: background-color 0.4s;
         cursor: pointer;
         border-radius: 5px;
-        font-size: 0.95rem;
+        font-size: 1rem;
       }
     }
   }
@@ -120,7 +121,6 @@ header {
       grid-template-columns: 1fr;
 
       .hero-text {
-        padding-top: 2rem;
         text-align: center;
 
         button {
@@ -128,16 +128,20 @@ header {
         }
       }
 
+      .hero-image {
+        margin-top: 1rem;
+      }
+
       .mobile-button {
         width: 60%;
-        margin: 1.5rem auto 0rem;
+        margin: 2rem auto 0rem;
       }
     }
   }
 }
 
 .about-section {
-  margin-top: 2rem;
+  margin-top: 0rem;
   margin-bottom: 3rem;
   width: 100%;
 
@@ -147,7 +151,7 @@ header {
     }
 
     p {
-      margin-top: 1rem;
+      margin-top: 1.5rem;
       text-align: center;
     }
   }

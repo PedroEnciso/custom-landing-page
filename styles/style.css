@@ -9,7 +9,7 @@ body {
   background-color: white;
   color: #25301e;
   font-family: "tahoma";
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 h1 {
@@ -37,6 +37,7 @@ button {
   color: #e6e3e3;
   text-transform: uppercase;
   font-weight: bold;
+  font-size: 1rem;
   letter-spacing: 0.1rem;
   font-family: "courier new";
 }
@@ -91,7 +92,7 @@ header nav ul li {
   transition: background-color 0.4s;
   cursor: pointer;
   border-radius: 5px;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 .hero {
@@ -132,7 +133,6 @@ header nav ul li {
 }
 
 .hero .hero-container .hero-content .hero-text {
-  padding-top: 2rem;
   text-align: center;
 }
 
@@ -140,13 +140,17 @@ header nav ul li {
   display: none;
 }
 
+.hero .hero-container .hero-content .hero-image {
+  margin-top: 1rem;
+}
+
 .hero .hero-container .hero-content .mobile-button {
   width: 60%;
-  margin: 1.5rem auto 0rem;
+  margin: 2rem auto 0rem;
 }
 
 .about-section {
-  margin-top: 2rem;
+  margin-top: 0rem;
   margin-bottom: 3rem;
   width: 100%;
 }
@@ -156,7 +160,7 @@ header nav ul li {
 }
 
 .about-section .about-container p {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
