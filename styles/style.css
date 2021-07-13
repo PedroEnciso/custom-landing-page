@@ -25,6 +25,10 @@ h2 {
   font-family: georgia;
 }
 
+p {
+  line-height: 1.5;
+}
+
 button {
   padding: 0.5rem 0.75rem;
   background: #883c8c;
@@ -37,6 +41,15 @@ button {
   font-family: "courier new";
 }
 
+hr {
+  width: 60%;
+  border: none;
+  height: 5px;
+  background-color: #aad989;
+  margin: 0.75rem auto 0rem;
+  border-radius: 5px;
+}
+
 .content-container {
   width: 90%;
   margin: 0 auto;
@@ -47,7 +60,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 2rem 0rem;
+  padding: 1.5rem 0rem;
 }
 
 header nav {
@@ -142,18 +155,8 @@ header nav ul li {
   text-align: center;
 }
 
-.about-section .about-container hr {
-  width: 60%;
-  border: none;
-  height: 5px;
-  background-color: #aad989;
-  margin: 0.75rem auto 0rem;
-  border-radius: 5px;
-}
-
 .about-section .about-container p {
-  margin-top: 1.25rem;
-  line-height: 1.5;
+  margin-top: 1rem;
   text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
