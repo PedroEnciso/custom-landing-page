@@ -12,7 +12,6 @@ $highlight: #883c8c;
 }
 
 body {
-  background-color: white;
   color: $text-color;
   font-family: "tahoma";
   font-size: 1.2rem;
@@ -52,8 +51,8 @@ hr {
   width: 60%;
   border: none;
   height: 5px;
-  background-color: $background1;
-  margin: 0.75rem auto 0rem;
+  background-color: $highlight;
+  margin: 0.75rem auto 1.5rem;
   border-radius: 5px;
 }
 
@@ -157,7 +156,6 @@ header {
     }
 
     p {
-      margin-top: 1.5rem;
       text-align: center;
     }
   }
@@ -166,7 +164,22 @@ header {
 .fact-section {
   width: 100%;
   margin-top: 5rem;
-  margin-bottom: 3rem;
+  position: relative;
+
+  .triangle-container {
+    width: 100%;
+    height: 100vh;
+    background-color: $background1;
+    position: absolute;
+    z-index: -10;
+    margin-top: 15rem;
+    .triangle {
+      height: 100%;
+      width: 100%;
+      background-color: white;
+      clip-path: polygon(0 0%, 100% 0, 100% 0%, 0 100%);
+    }
+  }
 
   .fact-container {
     width: 90%;
@@ -191,4 +204,47 @@ header {
       }
     }
   }
+}
+
+.contact-section {
+  margin-top: 5rem;
+  width: 100%;
+
+  .contact-container {
+    width: 90%;
+    margin: 0 auto;
+
+    h2 {
+      text-align: center;
+    }
+
+    .form {
+      margin: 2rem auto 0rem;
+      width: 80%;
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+
+        input {
+          margin: 0.5rem 0 1.5rem;
+          font-size: 1.1rem;
+          padding: 0.5rem;
+          border: 2px solid $highlight;
+          border-radius: 5px;
+        }
+
+        .message-input {
+          height: 5rem;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  background-color: $background1;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 1.9rem;
 }

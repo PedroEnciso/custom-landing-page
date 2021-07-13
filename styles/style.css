@@ -6,7 +6,6 @@
 }
 
 body {
-  background-color: white;
   color: #25301e;
   font-family: "tahoma";
   font-size: 1.2rem;
@@ -46,8 +45,8 @@ hr {
   width: 60%;
   border: none;
   height: 5px;
-  background-color: #aad989;
-  margin: 0.75rem auto 0rem;
+  background-color: #883c8c;
+  margin: 0.75rem auto 1.5rem;
   border-radius: 5px;
 }
 
@@ -167,14 +166,30 @@ header nav i {
 }
 
 .about-section .about-container p {
-  margin-top: 1.5rem;
   text-align: center;
 }
 
 .fact-section {
   width: 100%;
   margin-top: 5rem;
-  margin-bottom: 3rem;
+  position: relative;
+}
+
+.fact-section .triangle-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #aad989;
+  position: absolute;
+  z-index: -10;
+  margin-top: 15rem;
+}
+
+.fact-section .triangle-container .triangle {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  -webkit-clip-path: polygon(0 0%, 100% 0, 100% 0%, 0 100%);
+          clip-path: polygon(0 0%, 100% 0, 100% 0%, 0 100%);
 }
 
 .fact-section .fact-container {
@@ -208,5 +223,53 @@ header nav i {
 .fact-section .fact-container .fact p {
   margin: 1rem 0 1.5rem;
   text-align: center;
+}
+
+.contact-section {
+  margin-top: 5rem;
+  width: 100%;
+}
+
+.contact-section .contact-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.contact-section .contact-container h2 {
+  text-align: center;
+}
+
+.contact-section .contact-container .form {
+  margin: 2rem auto 0rem;
+  width: 80%;
+}
+
+.contact-section .contact-container .form .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-section .contact-container .form .form-group input {
+  margin: 0.5rem 0 1.5rem;
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  border: 2px solid #883c8c;
+  border-radius: 5px;
+}
+
+.contact-section .contact-container .form .form-group .message-input {
+  height: 5rem;
+}
+
+footer {
+  background-color: #aad989;
+  text-align: center;
+  padding: 2rem 0;
+  margin-top: 1.9rem;
 }
 /*# sourceMappingURL=style.css.map */
