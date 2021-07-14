@@ -2,6 +2,7 @@
 $text-color: #25301e;
 $button-text-color: #e6e3e3;
 $background1: #aad989;
+$background2: #e6fdd6;
 $highlight: #883c8c;
 
 ///// global styles /////
@@ -166,32 +167,20 @@ header {
   margin-top: 5rem;
   position: relative;
 
-  .triangle-container {
-    width: 100%;
-    height: 100vh;
-    background-color: $background1;
-    position: absolute;
-    z-index: -10;
-    margin-top: 15rem;
-    .triangle {
-      height: 100%;
-      width: 100%;
-      background-color: white;
-      clip-path: polygon(0 0%, 100% 0, 100% 0%, 0 100%);
-    }
-  }
-
   .fact-container {
     width: 90%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    grid-gap: 1rem;
+    grid-gap: 3rem;
 
-    .fact {
+    .fact-box {
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding: 1.5rem 2rem;
+      background-color: #f2f2f2;
+      border-radius: 5px;
 
       i {
         font-size: 3.5rem;
@@ -199,7 +188,7 @@ header {
       }
 
       p {
-        margin: 1rem 0 1.5rem;
+        margin: 1rem 0 0rem;
         text-align: center;
       }
     }
