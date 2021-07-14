@@ -59,6 +59,12 @@ i {
   margin: 0 auto;
 }
 
+@media only screen and (min-width: 768px) {
+  .content-container {
+    width: 80%;
+  }
+}
+
 header {
   position: absolute;
   top: 0;
@@ -100,6 +106,16 @@ header nav ul li {
 
 header nav i {
   font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+  header nav {
+    width: 85%;
+  }
+  header nav ul li:hover {
+    background-color: #f2f2f2;
+  }
 }
 
 .hero {
@@ -156,6 +172,12 @@ header nav i {
   margin: 2rem auto 0rem;
 }
 
+@media only screen and (min-width: 768px) {
+  .hero .hero-container {
+    width: 70%;
+  }
+}
+
 .about-section {
   margin-top: 0rem;
   width: 100%;
@@ -176,8 +198,6 @@ header nav i {
 }
 
 .fact-section .fact-container {
-  width: 90%;
-  margin: 0 auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -216,12 +236,11 @@ header nav i {
   width: 100%;
 }
 
-.contact-section .contact-container {
-  width: 90%;
-  margin: 0 auto;
+.contact-section .contact-container h2 {
+  text-align: center;
 }
 
-.contact-section .contact-container h2 {
+.contact-section .contact-container p {
   text-align: center;
 }
 
